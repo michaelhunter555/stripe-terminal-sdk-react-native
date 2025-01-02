@@ -1,50 +1,41 @@
-# Welcome to your Expo app 👋
+# 🏹 Hunter's Stripe SDK Terminal (React Native)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A **React Native** project for integrating **Stripe's SDK Terminal** to connect and interact with the **M2 Reader**. This app simplifies the payment process by handling reader discovery, connection, and payment collection.
 
-## Get started
+---
 
-1. Install dependencies
+## 📖 Table of Contents
 
+- [Features](#-features)
+- [Setup](#-setup)
+- [Usage](#-usage)
+- [Folder Structure](#-folder-structure)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+---
+
+## ✨ Features
+
+- 📡 **Reader Discovery**: Discover Bluetooth-enabled Stripe readers.
+- 🔌 **Reader Connection**: Seamlessly connect to the Stripe M2 Reader.
+- 💳 **Payment Processing**: Simulate or execute real transactions with test cards.
+
+---
+
+## 🛠️ Setup
+
+### Prerequisites
+
+1. Node.js (v16 or later)
+2. Expo CLI (`npm install -g expo-cli`)
+3. EAS CLI for builds (`npm install -g eas-cli`)
+4. Stripe account for Terminal setup.
+
+### Installation
+
+1. Clone the repository:
    ```bash
-   npm install
+   git clone https://github.com/<your-username>/stripe-sdk-terminal.git
+   cd stripe-sdk-terminal
    ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
