@@ -8,14 +8,17 @@
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "entryPoint": "./node_modules/expo-router/entry.js",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.michael.hunter22620.stripehhs"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.michael.hunter22620.stripehhs"
     },
     "web": {
       "bundler": "metro",
@@ -32,10 +35,41 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 26,
+            "compileSdkVersion": 33,
+            "targetSdkVersion": 33,
+            "extraProguardRules": "-keep public class com.stripeterminalreactnative.** { *; }",
+            "manifestPlaceholders": {
+              "tools:overrideLibrary": "com.stripeterminalreactnative"
+            }
+          }
+        }
+      ],
+      [
+        "@stripe/stripe-terminal-react-native",
+        {
+          "bluetoothBackgroundMode": true,
+          "locationWhenInUsePermission": "Location access is required in order to accept payments.",
+          "bluetoothPeripheralPermission": "Bluetooth access is required in order to connect to supported bluetooth card readers.",
+          "bluetoothAlwaysUsagePermission": "This app uses Bluetooth to connect to supported card readers."
+        }
       ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "3e145e00-fa21-452f-b66c-5b269057aba4"
+      }
     }
   }
 }
